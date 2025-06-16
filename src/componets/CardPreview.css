@@ -1,0 +1,46 @@
+.card-preview {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid #3498db;
+}
+
+.card-preview h2 {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.card-preview h4 {
+  margin: 0.3rem 0;
+  font-weight: normal;
+  color: #7f8c8d;
+}
+
+.card-preview .info p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+.card-preview a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card-preview a:hover {
+  text-decoration: underline;
+}
