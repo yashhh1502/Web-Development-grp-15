@@ -1,0 +1,130 @@
+/* CustomizePage.css */
+.customize-page {
+  padding: 30px;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.customize-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #222;
+}
+
+.customize-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Left Panel - Controls */
+.customize-controls {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.customize-header {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 2px solid #444;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.customize-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.customize-page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.customize-controls label {
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.customize-controls select,
+.customize-controls input[type="color"],
+.customize-controls input[type="text"],
+.customize-controls input[type="range"] {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Buttons */
+.glossy-button {
+  padding: 10px 16px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  background: linear-gradient(145deg, #6b8cff, #4b6de6);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.glossy-button:hover {
+  background: linear-gradient(145deg, #4b6de6, #6b8cff);
+  transform: translateY(-2px);
+}
+
+/* Card Preview Container */
+.custom-card-wrapper {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-card-preview {
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+  text-align: center;
+}
+
+/* Optional themes */
+.custom-card-preview.dark {
+  background-color: #333;
+  color: white;
+}
+
+.custom-card-preview.glass {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}

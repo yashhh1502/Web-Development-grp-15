@@ -1,0 +1,100 @@
+.card-container {
+  width: 350px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #1e1e1e; /* dark background */
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-cover {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-details {
+  padding: 1rem;
+  text-align: center;
+}
+
+.name-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.job-title-text {
+  font-size: 1rem;
+  color: #ff5722;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.contact-text {
+  margin-top: 6px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+.about-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.back-card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.link-text {
+  color: #4ea9f4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.link-text:hover {
+  color: #1d8ae8;
+}
+
+.tagline-text {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #ffffffcc;
+}
+.email-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.email-button:hover {
+  border-color: #333;
+  background-color: #f5f5f5;
+  color: black;
+}

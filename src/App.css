@@ -1,42 +1,105 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Left-side Form */
+.form-section {
+  flex: 1;
   padding: 2rem;
-  text-align: center;
+  background-color: #f0f8ff;
+  overflow-y: auto;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Right-side Preview */
+.preview-section {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f4f9fb;
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Flip Container */
+.card-flip {
+  position: relative;
+  width: 320px;
+  height: 192px;
+  perspective: 1000px;
 }
 
-.card {
-  padding: 2em;
+/* Front and Back Cards */
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform 0.6s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.read-the-docs {
-  color: #888;
+/* Front Side Default */
+.card-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+/* Back Side Hidden Initially */
+.card-back {
+  transform: rotateY(180deg);
+}
+
+/* Flipped States */
+.card-flip.flip .card-front {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.card-flip.flip .card-back {
+  transform: rotateY(360deg);
+  z-index: 2;
+}
+
+/* Button Styles */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+/* Blue for Image Download */
+.btn.blue {
+  background-color: #3498db;
+}
+
+/* Green for PDF Download */
+.btn.green {
+  background-color: #2ecc71;
+}
+
+/* Flip Toggle Button */
+.flip-button {
+  padding: 0.6rem 1.2rem;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
